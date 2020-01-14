@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D7D506C-1A79-4182-BA50-76E5C6DD10CD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CSSD.IS.ProfLearn.Console</RootNamespace>
+    <AssemblyName>CSSD.IS.ProfLearn.Console</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CSSD.IS.ProfLearn.Console.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>Common\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WinSCPnet">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\WinSCP-5.11.2\WinSCP\WinSCPnet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ExportToExcel.cs" />
+    <Compile Include="Common\UserProfileProcess.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSSD.IS.ProfLearn.BusinessFacade\CSSD.IS.ProfLearn.BusinessFacade.csproj">
+      <Project>{5a1ff913-5fd1-4cc9-b5b2-b2d7fda29bcf}</Project>
+      <Name>CSSD.IS.ProfLearn.BusinessFacade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSSD.IS.ProfLearn.BusinessLogic\CSSD.IS.ProfLearn.BusinessLogic.csproj">
+      <Project>{3266b886-015f-489c-b675-97e280c0aa58}</Project>
+      <Name>CSSD.IS.ProfLearn.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSSD.IS.ProfLearn.DataAccess\CSSD.IS.ProfLearn.DataAccess.csproj">
+      <Project>{e97a6e20-6ae0-4e07-b065-0339b8bc8731}</Project>
+      <Name>CSSD.IS.ProfLearn.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSSD.IS.ProfLearn.DataEntityModel\CSSD.IS.ProfLearn.DataEntityModel.csproj">
+      <Project>{f672f2ea-dc5e-4082-8867-18b9e6fd5c09}</Project>
+      <Name>CSSD.IS.ProfLearn.DataEntityModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSSD.IS.ProfLearn.Util\CSSD.IS.ProfLearn.Util.csproj">
+      <Project>{fc2c92cc-fc71-4094-80d7-c66e3cc4e995}</Project>
+      <Name>CSSD.IS.ProfLearn.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

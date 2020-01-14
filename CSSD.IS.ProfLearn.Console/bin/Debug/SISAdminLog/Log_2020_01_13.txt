@@ -1,0 +1,224 @@
+
+Log Entry : 2020-01-13:10:34:36 :
+Error: occurred in retrieving from query RetriveAllUserProfiles.
+-------------------------------
+
+Log Entry : 2020-01-13:10:34:36 :
+System.IO.FileNotFoundException: Could not find file 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'.
+File name: 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at CSSD.IS.ProfLearn.Util.QueryHandler..ctor() in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\QueryHandler.cs:line 26
+   at CSSD.IS.ProfLearn.Util.QueryHandler.GetQueryHandler() in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\QueryHandler.cs:line 41
+   at CSSD.IS.ProfLearn.DataAccess.UserProfileDA.RetriveAllUserProfiles(UserProfileDEMType obj) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\UserProfileDA.cs:line 24
+   at CSSD.IS.ProfLearn.BusinessLogic.UserProfileBL.RetrieveAllUserProfiles(UserProfileDEMType obj, DbConnection dbConnection, SqlTransaction transaction) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.BusinessLogic\UserProfileBL.cs:line 17
+   at CSSD.IS.ProfLearn.BusinessFacade.UserProfileBF.RetrieveAllUserProfiles(UserProfileRequest obj) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.BusinessFacade\UserProfileBF.cs:line 32
+-------------------------------
+
+Log Entry : 2020-01-13:10:34:36 :
+The task is terminated in Export to Excel.cs - Could not find file 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'.
+-------------------------------
+
+Log Entry : 2020-01-13:10:34:36 :
+Process completed \\s096-a0605-02\ihdev_file$\THRIVE\ThriveUsers.xlsx
+-------------------------------
+
+Log Entry : 2020-01-13:11:12:54 :
+Error: occurred in retrieving from query RetriveAllUserProfiles.
+-------------------------------
+
+Log Entry : 2020-01-13:11:12:54 :
+System.IO.FileNotFoundException: Could not find file 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'.
+File name: 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at CSSD.IS.ProfLearn.Util.QueryHandler..ctor() in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\QueryHandler.cs:line 26
+   at CSSD.IS.ProfLearn.Util.QueryHandler.GetQueryHandler() in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\QueryHandler.cs:line 41
+   at CSSD.IS.ProfLearn.DataAccess.UserProfileDA.RetriveAllUserProfiles(UserProfileDEMType obj) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\UserProfileDA.cs:line 24
+   at CSSD.IS.ProfLearn.BusinessLogic.UserProfileBL.RetrieveAllUserProfiles(UserProfileDEMType obj, DbConnection dbConnection, SqlTransaction transaction) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.BusinessLogic\UserProfileBL.cs:line 17
+   at CSSD.IS.ProfLearn.BusinessFacade.UserProfileBF.RetrieveAllUserProfiles(UserProfileRequest obj) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.BusinessFacade\UserProfileBF.cs:line 32
+-------------------------------
+
+Log Entry : 2020-01-13:11:12:54 :
+The task is terminated in Export to Excel.cs - Could not find file 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'.
+-------------------------------
+
+Log Entry : 2020-01-13:11:12:54 :
+Process completed \\s096-a0605-02\ihdev_file$\THRIVE\ThriveUsers.xlsx
+-------------------------------
+
+Log Entry : 2020-01-13:11:13:09 :
+Error: occurred in retrieving from query RetriveAllUserProfiles.
+-------------------------------
+
+Log Entry : 2020-01-13:11:13:09 :
+System.IO.FileNotFoundException: Could not find file 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'.
+File name: 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at CSSD.IS.ProfLearn.Util.QueryHandler..ctor() in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\QueryHandler.cs:line 26
+   at CSSD.IS.ProfLearn.Util.QueryHandler.GetQueryHandler() in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\QueryHandler.cs:line 41
+   at CSSD.IS.ProfLearn.DataAccess.UserProfileDA.RetriveAllUserProfiles(UserProfileDEMType obj) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\UserProfileDA.cs:line 24
+   at CSSD.IS.ProfLearn.BusinessLogic.UserProfileBL.RetrieveAllUserProfiles(UserProfileDEMType obj, DbConnection dbConnection, SqlTransaction transaction) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.BusinessLogic\UserProfileBL.cs:line 17
+   at CSSD.IS.ProfLearn.BusinessFacade.UserProfileBF.RetrieveAllUserProfiles(UserProfileRequest obj) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.BusinessFacade\UserProfileBF.cs:line 32
+-------------------------------
+
+Log Entry : 2020-01-13:11:13:09 :
+The task is terminated in Export to Excel.cs - Could not find file 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'.
+-------------------------------
+
+Log Entry : 2020-01-13:11:13:09 :
+Process completed \\s096-a0605-02\ihdev_file$\THRIVE\ThriveUsers.xlsx
+-------------------------------
+
+Log Entry : 2020-01-13:11:22:51 :
+Error: occurred in retrieving from query RetriveAllUserProfiles.
+-------------------------------
+
+Log Entry : 2020-01-13:11:22:51 :
+System.IO.FileNotFoundException: Could not find file 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'.
+File name: 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at CSSD.IS.ProfLearn.Util.QueryHandler..ctor() in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\QueryHandler.cs:line 26
+   at CSSD.IS.ProfLearn.Util.QueryHandler.GetQueryHandler() in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\QueryHandler.cs:line 41
+   at CSSD.IS.ProfLearn.DataAccess.UserProfileDA.RetriveAllUserProfiles(UserProfileDEMType obj) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\UserProfileDA.cs:line 24
+   at CSSD.IS.ProfLearn.BusinessLogic.UserProfileBL.RetrieveAllUserProfiles(UserProfileDEMType obj, DbConnection dbConnection, SqlTransaction transaction) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.BusinessLogic\UserProfileBL.cs:line 17
+   at CSSD.IS.ProfLearn.BusinessFacade.UserProfileBF.RetrieveAllUserProfiles(UserProfileRequest obj) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.BusinessFacade\UserProfileBF.cs:line 32
+-------------------------------
+
+Log Entry : 2020-01-13:11:22:51 :
+The task is terminated in Export to Excel.cs - Could not find file 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'.
+-------------------------------
+
+Log Entry : 2020-01-13:11:22:51 :
+Process completed \\s096-a0605-02\ihdev_file$\THRIVE\ThriveUsers.xlsx
+-------------------------------
+
+Log Entry : 2020-01-13:11:23:02 :
+Error: occurred in retrieving from query RetriveAllUserProfiles.
+-------------------------------
+
+Log Entry : 2020-01-13:11:23:02 :
+System.IO.FileNotFoundException: Could not find file 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'.
+File name: 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at CSSD.IS.ProfLearn.Util.QueryHandler..ctor() in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\QueryHandler.cs:line 26
+   at CSSD.IS.ProfLearn.Util.QueryHandler.GetQueryHandler() in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\QueryHandler.cs:line 41
+   at CSSD.IS.ProfLearn.DataAccess.UserProfileDA.RetriveAllUserProfiles(UserProfileDEMType obj) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\UserProfileDA.cs:line 24
+   at CSSD.IS.ProfLearn.BusinessLogic.UserProfileBL.RetrieveAllUserProfiles(UserProfileDEMType obj, DbConnection dbConnection, SqlTransaction transaction) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.BusinessLogic\UserProfileBL.cs:line 17
+   at CSSD.IS.ProfLearn.BusinessFacade.UserProfileBF.RetrieveAllUserProfiles(UserProfileRequest obj) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.BusinessFacade\UserProfileBF.cs:line 32
+-------------------------------
+
+Log Entry : 2020-01-13:11:23:02 :
+The task is terminated in Export to Excel.cs - Could not find file 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'.
+-------------------------------
+
+Log Entry : 2020-01-13:11:23:02 :
+Process completed \\s096-a0605-02\ihdev_file$\THRIVE\ThriveUsers.xlsx
+-------------------------------
+
+Log Entry : 2020-01-13:11:29:12 :
+Error: occurred in retrieving from query RetriveAllUserProfiles.
+-------------------------------
+
+Log Entry : 2020-01-13:11:29:12 :
+System.IO.FileNotFoundException: Could not find file 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'.
+File name: 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at CSSD.IS.ProfLearn.Util.QueryHandler..ctor() in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\QueryHandler.cs:line 26
+   at CSSD.IS.ProfLearn.Util.QueryHandler.GetQueryHandler() in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\QueryHandler.cs:line 41
+   at CSSD.IS.ProfLearn.DataAccess.UserProfileDA.RetriveAllUserProfiles(UserProfileDEMType obj) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\UserProfileDA.cs:line 24
+   at CSSD.IS.ProfLearn.BusinessLogic.UserProfileBL.RetrieveAllUserProfiles(UserProfileDEMType obj, DbConnection dbConnection, SqlTransaction transaction) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.BusinessLogic\UserProfileBL.cs:line 17
+   at CSSD.IS.ProfLearn.BusinessFacade.UserProfileBF.RetrieveAllUserProfiles(UserProfileRequest obj) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.BusinessFacade\UserProfileBF.cs:line 32
+-------------------------------
+
+Log Entry : 2020-01-13:11:29:12 :
+The task is terminated in Export to Excel.cs - Could not find file 'C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\bin\Debug\Query.xml'.
+-------------------------------
+
+Log Entry : 2020-01-13:11:29:12 :
+Process completed \\s096-a0605-02\ihdev_file$\THRIVE\ThriveUsers.xlsx
+-------------------------------
+
+Log Entry : 2020-01-13:12:18:56 :
+Export file is completed... \\s096-a0605-02\ihdev_file$\THRIVE\ThriveUsers.xlsx
+-------------------------------
+
+Log Entry : 2020-01-13:12:18:56 :
+Process completed \\s096-a0605-02\ihdev_file$\THRIVE\ThriveUsers.xlsx
+-------------------------------

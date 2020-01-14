@@ -1,0 +1,12 @@
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\bin\Debug\CSSD.IS.ProfLearn.DataAccess.dll.config
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\bin\Debug\CSSD.IS.ProfLearn.DataAccess.dll
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\bin\Debug\CSSD.IS.ProfLearn.DataAccess.pdb
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\bin\Debug\CSSD.IS.ProfLearn.DataEntityModel.dll
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\bin\Debug\CSSD.IS.ProfLearn.Util.dll
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\bin\Debug\CSSD.IS.ProfLearn.DataEntityModel.pdb
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\bin\Debug\CSSD.IS.ProfLearn.Util.pdb
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\bin\Debug\CSSD.IS.ProfLearn.Util.dll.config
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\obj\Debug\CSSD.IS.ProfLearn.DataAccess.csprojAssemblyReference.cache
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\obj\Debug\CSSD.IS.ProfLearn.DataAccess.csproj.CopyComplete
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\obj\Debug\CSSD.IS.ProfLearn.DataAccess.dll
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataAccess\obj\Debug\CSSD.IS.ProfLearn.DataAccess.pdb

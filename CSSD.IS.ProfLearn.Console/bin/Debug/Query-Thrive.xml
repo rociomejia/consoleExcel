@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<queries>
+  <query id="RetriveAllUserProfiles">
+    <![CDATA[    
+     SELECT 
+               RTRIM(A.EMPLID) as Thrive_user
+             , RTRIM(A.AD_EMAIL_ADDR) as Email    
+             , RTRIM(A.AD_USERNAME) as LDAPUser   
+             ,'Thrive2016' as Password 
+             ,UPPER(SUBSTRING(AD_FIRST_NAME,1,1))+SUBSTRING(AD_FIRST_NAME,2,29) as first_name
+             , RTRIM(A.MIDDLE_NAME) as middle_name	
+             , RTRIM(A.LAST_NAME) as last_name	
+             ,'Staff' as profile_type
+             ,(CASE SUBSTRING(CCS_UNION_CD_LIST,1,3) 
+     		  WHEN 'ATA' THEN (CASE substring(CCS_JOBCODE_LIST,charindex('PRN',CCS_JOBCODE_LIST),3) 
+     						   WHEN 'PRN' THEN 'School Administrator'  ELSE 'ATA' END)
+     		  WHEN 'CPE' THEN 'Caretaking' ELSE 'Support Staff' END) as role_type  
+             , 'ACTIVE' as user_status    
+             ,(CASE SUBSTRING(CCS_UNION_CD_LIST,1,3) WHEN 'ATA' THEN 'ATA' WHEN 'CPE' THEN 'Caretaking' ELSE 'Support Staff' END) as registrant_type
+             , B.DESCR as primary_location_name	
+             ,(CASE SUBSTRING(CCS_UNION_CD_LIST,1,3) WHEN 'ATA' THEN 'Teach' WHEN 'CPE' THEN 'Caretaking' ELSE 'Supp' END) as primary_classification_name
+             , '' as birthdate   			
+             , '' as gender      			
+             , '' as ethnicity			
+             , '' as highly_qualified 		
+             , '' as a_little_about_me 	
+             , '' as Tags 				
+             , '' as address_type 			
+             , '' as address_line1 		
+             , '' as address_line2 		
+             , '' as city 				
+             , '' as country 		
+             , '' as state_province
+             , '' as zip_postal_code 
+             , '' as county 				
+             , '' as home_phone_number 
+             , '' as mobile_phone_number 
+             , '' as work_phone_number 	
+             , '' as other_phone_number 	
+             , '' as secondary_location_name 
+             , '' as secondary_classification_name	
+             , '' as certification_area		
+             , '' as issue_date			
+             , '' as expiration_date		
+             , '' as hire_date			
+             , '' as start_date		
+             , '' as comments		
+             , '' as schoology_profile_name		
+             , '' as location_group			
+             , A.EMPLID as SecondaryId   
+             , '' as PD360Username			
+             , '' as Moodle_Username		
+             , '' as Blackboard_Learn_Username	
+             , '' as Canvas_Username			
+             , '' as Desire2Learn			
+             , '' as TeachermatchID   	
+             , '' as Curriculum_Categories		
+             , '' as Training_organization_name
+             FROM CCS_HR_AD_SYNC A, CCS_LOCATION_TBL B
+             WHERE               
+                A.HR_STATUS <> 'T_'
+                and A.HR_STATUS NOT LIKE 'L_%'
+                and A.HR_STATUS NOT LIKE 'P_%'
+                and A.EMPLID NOT LIKE '999%'
+                and SUBSTRING(CCS_PAYGROUP_LIST,1,3) NOT IN ('CPH','EXH','STH')
+                and SUBSTRING(A.CCS_LOCATION_LIST,1,4) = B.LOCATION 
+      ]]>
+  </query>
+</queries>

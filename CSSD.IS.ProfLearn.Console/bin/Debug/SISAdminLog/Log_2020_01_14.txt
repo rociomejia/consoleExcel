@@ -1,0 +1,16 @@
+
+Log Entry : 2020-01-14:10:40:22 :
+Export file is completed... \\s096-a0605-02\ihdev_file$\THRIVE\ThriveUsers.xlsx
+-------------------------------
+
+Log Entry : 2020-01-14:10:40:22 :
+Process completed \\s096-a0605-02\ihdev_file$\THRIVE\ThriveUsers.xlsx
+-------------------------------
+
+Log Entry : 2020-01-14:11:56:44 :
+Export file is completed... \\s096-a0605-02\ihdev_file$\THRIVE\ProfLearn.csv
+-------------------------------
+
+Log Entry : 2020-01-14:11:56:44 :
+Process completed \\s096-a0605-02\ihdev_file$\THRIVE\ProfLearn.csv
+-------------------------------
