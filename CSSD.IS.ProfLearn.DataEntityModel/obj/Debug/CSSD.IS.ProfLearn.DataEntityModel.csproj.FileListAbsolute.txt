@@ -1,0 +1,5 @@
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataEntityModel\bin\Debug\CSSD.IS.ProfLearn.DataEntityModel.dll
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataEntityModel\bin\Debug\CSSD.IS.ProfLearn.DataEntityModel.pdb
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataEntityModel\obj\Debug\CSSD.IS.ProfLearn.DataEntityModel.dll
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataEntityModel\obj\Debug\CSSD.IS.ProfLearn.DataEntityModel.pdb
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.DataEntityModel\obj\Debug\CSSD.IS.ProfLearn.DataEntityModel.csprojAssemblyReference.cache

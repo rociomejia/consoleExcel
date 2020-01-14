@@ -1,0 +1,6 @@
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\bin\Debug\CSSD.IS.ProfLearn.Util.dll.config
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\bin\Debug\CSSD.IS.ProfLearn.Util.dll
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\bin\Debug\CSSD.IS.ProfLearn.Util.pdb
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\obj\Debug\CSSD.IS.ProfLearn.Util.csprojAssemblyReference.cache
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\obj\Debug\CSSD.IS.ProfLearn.Util.dll
+C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Util\obj\Debug\CSSD.IS.ProfLearn.Util.pdb
