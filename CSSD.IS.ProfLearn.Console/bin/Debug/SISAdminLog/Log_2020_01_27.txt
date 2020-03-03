@@ -1,0 +1,48 @@
+
+Log Entry : 2020-01-27:10:06:50 :
+Done SFTP session options setting.
+-------------------------------
+
+Log Entry : 2020-01-27:10:06:52 :
+Open SFTP Session...
+-------------------------------
+
+Log Entry : 2020-01-27:10:06:54 :
+Upload file succeeded: \\s096-a0605-02\ihdev_file$\PROFLEARNING\ProfLearn.txt
+-------------------------------
+
+Log Entry : 2020-01-27:10:06:55 :
+Uploaded file to vendor's SFTP host.
+-------------------------------
+
+Log Entry : 2020-01-27:10:06:55 :
+SFTP Process is done.
+-------------------------------
+
+Log Entry : 2020-01-27:10:06:55 :
+Process completed \\s096-a0605-02\ihdev_file$\PROFLEARNING\ProfLearn.txt
+-------------------------------
+
+Log Entry : 2020-01-27:10:07:11 :
+Done SFTP session options setting.
+-------------------------------
+
+Log Entry : 2020-01-27:10:07:13 :
+Open SFTP Session...
+-------------------------------
+
+Log Entry : 2020-01-27:10:07:14 :
+Upload file succeeded: \\s096-a0605-02\ihdev_file$\PROFLEARNING\ProfLearn.txt
+-------------------------------
+
+Log Entry : 2020-01-27:10:07:15 :
+Uploaded file to vendor's SFTP host.
+-------------------------------
+
+Log Entry : 2020-01-27:10:07:15 :
+SFTP Process is done.
+-------------------------------
+
+Log Entry : 2020-01-27:10:07:15 :
+Process completed \\s096-a0605-02\ihdev_file$\PROFLEARNING\ProfLearn.txt
+-------------------------------

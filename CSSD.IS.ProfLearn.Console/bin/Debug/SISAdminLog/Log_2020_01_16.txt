@@ -1,0 +1,37 @@
+
+Log Entry : 2020-01-16:13:24:30 :
+Done SFTP session options setting.
+-------------------------------
+
+Log Entry : 2020-01-16:13:24:50 :
+Could not open WinSCP ln 51 on program.cs Connection has been unexpectedly closed. Server sent command exit status 0.
+Authentication log (see session log for details):
+Unable to use key file "I:\Enterprise\PROFLEARNING\ProfLearn-PublicKey.ppk" (unable to open file)
+Using username "CANCCSD".
+
+Authentication failed.
+-------------------------------
+
+Log Entry : 2020-01-16:13:40:04 :
+Done SFTP session options setting.
+-------------------------------
+
+Log Entry : 2020-01-16:13:40:43 :
+Open SFTP Session...
+-------------------------------
+
+Log Entry : 2020-01-16:13:41:24 :
+Upload file succeeded: \\s096-a0605-02\ihdev_file$\PROFLEARNING\ProfLearn.csv
+-------------------------------
+
+Log Entry : 2020-01-16:13:41:31 :
+Uploaded file to vendor's SFTP host.
+-------------------------------
+
+Log Entry : 2020-01-16:13:41:34 :
+SFTP Process is done.
+-------------------------------
+
+Log Entry : 2020-01-16:13:41:37 :
+Process completed \\s096-a0605-02\ihdev_file$\PROFLEARNING\ProfLearn.csv
+-------------------------------

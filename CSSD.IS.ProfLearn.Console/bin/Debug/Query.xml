@@ -2,105 +2,110 @@
 <queries>
   <query id="RetriveAllUserProfiles">
     <![CDATA[    
-  Select RTRIM(A.EMPLID)											as EmployeeId
-   , RTRIM(A.AD_EMAIL_ADDR)										as Username
-	 , RTRIM(A.LAST_NAME)												as LastName	
-   , RTRIM(PREF_FIRST_NAME)		 								as FirstName
-   , RTRIM(A.MIDDLE_NAME)									   	as MiddleName	
-   , Format(AD_CREATED_DTTM,'yyyy-MM-dd')			as Hiredate
-	 , RTRIM(A.AD_EMAIL_ADDR)										as Email
+  Select RTRIM(A.EMPLID) as EmployeeId
+   , RTRIM(A.AD_EMAIL_ADDR) as Username
+   , RTRIM(A.LAST_NAME)	as LastName	
+   , RTRIM(PREF_FIRST_NAME)as FirstName
+   , RTRIM(A.MIDDLE_NAME)as MiddleName	
+   , ''	as Hiredate
+   , RTRIM(A.AD_EMAIL_ADDR) as Email
 	 , Case A.HR_STATUS  
           When 'T_' Then 'I'
 		  Else 'A'
-		  End 														        as ActiveAccount
+		  End  as ActiveAccount
    ,(CASE SUBSTRING(CCS_UNION_CD_LIST,1,3) 
     	 WHEN 'ATA' THEN
-		     CASE SUBSTRING(CCS_JOBCODE_LIST,1,3)  	     
- 			 WHEN 'VCE' THEN '6'  
-			 WHEN 'PRN' THEN '6'  
-			 WHEN 'ASS' THEN '6'  
-			 ELSE '10' END						 
+    	     case  	        
+	 	when CHARINDEX('PRN',CCS_JOBCODE_LIST)	 >= 1  then '6'	 	
+	     else '10'
+	     End				  				 
      	 WHEN 'CPE' THEN '10' 
-		 ELSE '10' END)							              as GroupTypeid
+	 ELSE '10' END)	as GroupTypeid
+	 
    ,(CASE SUBSTRING(CCS_UNION_CD_LIST,1,3) 
     	 WHEN 'ATA' THEN
-		     CASE SUBSTRING(CCS_JOBCODE_LIST,1,3)  	     
- 			 WHEN 'VCE' THEN 'SCHADM'  
-			 WHEN 'PRN' THEN 'SCHADM'  
-			 WHEN 'ASS' THEN 'SCHADM'  
-			 ELSE 'ATA' END						 
+    	     case  	        
+	 	when CHARINDEX('PRN',CCS_JOBCODE_LIST)	 >= 1  then 'SCHADM'	 	
+	     Else 'ATA'
+	     End	
      	 WHEN 'CPE' THEN 'CPE' 
-		 ELSE 'SUPPORT' END)							        as DemogCode  
-		,Case LEN(A.CCS_LOCATION_LIST) 
-			   when 5 then replace( A.CCS_LOCATION_LIST,'_' ,'')
-		       Else 
-				  SUBSTRING(replace( A.CCS_LOCATION_LIST,'_' ,','),1,LEN(A.CCS_LOCATION_LIST)-1) 
-		 	   end														      as SiteCode
-	 , SUBSTRING(A.CCS_LOCATION_LIST,1,4)		as PrimarySite		            
+	 ELSE 'SUPPORT' END) as DemogCode  
+	 
+   ,Case LEN(A.CCS_LOCATION_LIST) 
+	When 5 then replace( A.CCS_LOCATION_LIST,'_' ,'')
+	Else 
+	   SUBSTRING(replace( A.CCS_LOCATION_LIST,'_' ,','),1,LEN(A.CCS_LOCATION_LIST)-1) 
+	End as SiteCode
+   , SUBSTRING(A.CCS_LOCATION_LIST,1,4)	as PrimarySite		            
    , '' as Field1
-	 , '' as Field2
-	 , '' as Field3
-	 , '' as Field4
-	 , '' as Field5			 
+   , '' as Field2
+   , '' as Field3
+   , '' as Field4
+   , '' as Field5			 
   FROM CCS_HR_AD_SYNC A
   WHERE                              
-     A.HR_STATUS NOT LIKE 'T_%'
-		and A.HR_STATUS NOT LIKE 'L_%'
+        A.HR_STATUS NOT LIKE 'T_%'
+    and A.HR_STATUS NOT LIKE 'L_%'
     and A.HR_STATUS NOT LIKE 'P_%'
     and A.EMPLID NOT LIKE '999%'
     and SUBSTRING(A.CCS_PAYGROUP_LIST,1,3) NOT IN ('CPH','EXH','STH')
+    and (AD_USERNAME <> '')
+    and (AD_EMAIL_ADDR  <>'')
+    and AD_USERNAME is not null
+    and (AD_EMAIL_ADDR is not null)
   	
   union
 
-  Select RTRIM(A.EMPLID)													as EmployeeId
-     , RTRIM(A.AD_EMAIL_ADDR)											as Username
-	   , RTRIM(A.LAST_NAME)												  as LastName	
-     , UPPER(SUBSTRING(AD_FIRST_NAME,1,1))+SUBSTRING(AD_FIRST_NAME,2,29) as FirstName
-     , RTRIM(A.MIDDLE_NAME)									   		as MiddleName	
-     , Format(AD_CREATED_DTTM,'yyyy-MM-dd')				as Hiredate
-	 , RTRIM(A.AD_EMAIL_ADDR)											  as Email
-	 , Case A.HR_STATUS  
+  Select RTRIM(A.EMPLID)	as EmployeeId
+     , RTRIM(A.AD_EMAIL_ADDR)	as Username
+     , RTRIM(A.LAST_NAME)	as LastName	
+     , RTRIM(PREF_FIRST_NAME)   as FirstName 
+     , RTRIM(A.MIDDLE_NAME)	as MiddleName	
+     , ''			as Hiredate
+     , RTRIM(A.AD_EMAIL_ADDR)   as Email
+     , Case A.HR_STATUS  
           When 'T_' Then 'I'
-		  Else 'A'
-		  End 														            as ActiveAccount
-   ,(CASE SUBSTRING(CCS_UNION_CD_LIST,1,3) 
+	  Else 'A'
+	  End 	                as ActiveAccount
+    ,(CASE SUBSTRING(CCS_UNION_CD_LIST,1,3) 
     	 WHEN 'ATA' THEN
-		     CASE SUBSTRING(CCS_JOBCODE_LIST,1,3)  	     
- 			 WHEN 'VCE' THEN '6'  
-			 WHEN 'PRN' THEN '6'  
-			 WHEN 'ASS' THEN '6'  
-			 ELSE '10' END						 
+    	     case  	        
+	 	when CHARINDEX('PRN',CCS_JOBCODE_LIST)	 >= 1  then '6'	 	
+	     else '10'
+	     End				  				 
      	 WHEN 'CPE' THEN '10' 
-		   ELSE '10' END)							                as GroupTypeid,
-
-   (CASE SUBSTRING(CCS_UNION_CD_LIST,1,3) 
-    	 WHEN 'ATA' THEN
-		     CASE SUBSTRING(CCS_JOBCODE_LIST,1,3)  	     
- 			 WHEN 'VCE' THEN 'VCE'  
-			 WHEN 'PRN' THEN 'PRN'  
-			 WHEN 'ASS' THEN 'ASS'  
-			 ELSE 'ATA' END						 
-     	 WHEN 'CPE' THEN 'CPE' 
-		 ELSE 'SUPPORT' END)							            as DemogCode  
-		,Case LEN(A.CCS_LOCATION_LIST) 
-			   when 5 then replace( A.CCS_LOCATION_LIST,'_' ,'')
-		     Else 
-				    SUBSTRING(replace( A.CCS_LOCATION_LIST,'_' ,','),1,LEN(A.CCS_LOCATION_LIST)-1) 
-		 	   end														          as SiteCode
-		,SUBSTRING(A.CCS_LOCATION_LIST,1,4)					as PrimarySite		            
-    , '' as Field1
-		, '' as Field2
-		, '' as Field3
-		, '' as Field4
-		, '' as Field5		
+	 ELSE '10' END)	as GroupTypeid
+	 
+    ,(CASE SUBSTRING(CCS_UNION_CD_LIST,1,3) 
+       	 WHEN 'ATA' THEN
+       	     case     	        
+   	 	when CHARINDEX('PRN',CCS_JOBCODE_LIST)	 >= 1  then 'SCHADM'   	 	
+   	     Else 'ATA'
+   	     End	
+        	 WHEN 'CPE' THEN 'CPE' 
+	 ELSE 'SUPPORT' END) as DemogCode 
+      
+   ,Case LEN(A.CCS_LOCATION_LIST) 
+       when 5 then replace( A.CCS_LOCATION_LIST,'_' ,'')
+       Else 
+          SUBSTRING(replace( A.CCS_LOCATION_LIST,'_' ,','),1,LEN(A.CCS_LOCATION_LIST)-1) 
+       End as SiteCode
+       
+   ,SUBSTRING(A.CCS_LOCATION_LIST,1,4) as PrimarySite		            
+   , '' as Field1
+   , '' as Field2
+   , '' as Field3
+   , '' as Field4
+   , '' as Field5		
  FROM  CCS_HR_AD_SYNC A
  WHERE Format (AD_DISABLED_DTTM,'yyyy-MM-dd') >='2019-11-01'  
-		and A.HR_STATUS like '%T_%'
-		and A.HR_STATUS NOT LIKE 'L_%'
-    and A.HR_STATUS NOT LIKE 'P_%'
+    and A.HR_STATUS like '%T_%'   
     and A.EMPLID NOT LIKE '999%'
     and SUBSTRING(A.CCS_PAYGROUP_LIST,1,3) NOT IN ('CPH','EXH','STH')
-     
+    and (AD_USERNAME <> '')
+    and (AD_EMAIL_ADDR  <>'')
+    and AD_USERNAME is not null
+    and (AD_EMAIL_ADDR is not null)
       ]]>
   </query>
 </queries>

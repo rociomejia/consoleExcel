@@ -1,0 +1,48 @@
+
+Log Entry : 2020-01-15:08:49:45 :
+Process completed \\s096-a0605-02\ihdev_file$\THRIVE\ProfLearn.csv
+-------------------------------
+
+Log Entry : 2020-01-15:09:17:17 :
+Process completed \\s096-a0605-02\ihdev_file$\THRIVE\ProfLearn.csv
+-------------------------------
+
+Log Entry : 2020-01-15:10:38:59 :
+Process completed \\s096-a0605-02\ihdev_file$\THRIVE\ProfLearn.csv
+-------------------------------
+
+Log Entry : 2020-01-15:11:27:54 :
+Done SFTP session options setting.
+-------------------------------
+
+Log Entry : 2020-01-15:11:27:55 :
+Could not open WinSCP ln 51 on program.cs Connection has been unexpectedly closed. Server sent command exit status 0.
+Authentication log (see session log for details):
+Unable to use key file "I:\Enterprise_Team\THRIVE\newthrivePrivateKey.ppk" (unable to open file)
+Using username "calg".
+
+Authentication failed.
+-------------------------------
+
+Log Entry : 2020-01-15:11:27:55 :
+Error: occurred in SFTP xml files.
+-------------------------------
+
+Log Entry : 2020-01-15:11:27:55 :
+System.Exception: Connection has been unexpectedly closed. Server sent command exit status 0.
+Authentication log (see session log for details):
+Unable to use key file "I:\Enterprise_Team\THRIVE\newthrivePrivateKey.ppk" (unable to open file)
+Using username "calg".
+
+Authentication failed.
+   at CSSD.IS.ProfLearn.Console.Program.FTPExcelFiles(String databaseServerName) in C:\Users\rocio.mejia\source\repos\ConsoleApp1\CSSD.IS.ProfLearn.Console\Program.cs:line 154
+-------------------------------
+
+Log Entry : 2020-01-15:11:27:55 :
+The task is terminated - Program.cs- Connection has been unexpectedly closed. Server sent command exit status 0.
+Authentication log (see session log for details):
+Unable to use key file "I:\Enterprise_Team\THRIVE\newthrivePrivateKey.ppk" (unable to open file)
+Using username "calg".
+
+Authentication failed.
+-------------------------------

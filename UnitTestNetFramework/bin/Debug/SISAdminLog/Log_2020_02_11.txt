@@ -1,0 +1,40 @@
+
+Log Entry : 2020-02-11:10:37:40 :
+Step 1: Connection to SQL server opened - Initial Catalog=HRAD;Data Source=s096-a0620-21.admin.cssd.ab.ca;Trusted_Connection=True;
+-------------------------------
+
+Log Entry : 2020-02-11:10:37:41 :
+Step 2: Query statement is loaded on Data Reader
+-------------------------------
+
+Log Entry : 2020-02-11:10:38:02 :
+Step-4: Succeed transferring file to vendor SFTP host.
+-------------------------------
+
+Log Entry : 2020-02-11:10:38:05 :
+Step-4: Succeed transferring file to vendor SFTP host.
+-------------------------------
+
+Log Entry : 2020-02-11:10:39:44 :
+Step-4: Succeed transferring file to vendor SFTP host.
+-------------------------------
+
+Log Entry : 2020-02-11:10:39:47 :
+Step-4: Succeed transferring file to vendor SFTP host.
+-------------------------------
+
+Log Entry : 2020-02-11:10:44:32 :
+Step 1: Connection to SQL server opened - Initial Catalog=HRAD;Data Source=s096-a0611-03.admin.cssd.ab.ca;Trusted_Connection=True;
+-------------------------------
+
+Log Entry : 2020-02-11:10:44:32 :
+Step 2: Query statement is loaded on Data Reader
+-------------------------------
+
+Log Entry : 2020-02-11:10:49:29 :
+Step-4: Succeed transferring file to vendor SFTP host.
+-------------------------------
+
+Log Entry : 2020-02-11:10:49:32 :
+Step-4: Succeed transferring file to vendor SFTP host.
+-------------------------------
